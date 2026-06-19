@@ -1,11 +1,20 @@
 {
-  "image_name": "cyberdojofoundation/fsharp_nunit:97dbdd7",
-  "display_name": "F#, NUnit",
+  "display_name": "F# 15.2.0, NUnit",
+  "language": [
+    "F#",
+    "15.2.0"
+  ],
+  "test_framework": [
+    "NUnit",
+    ""
+  ],
+  "image_name": "ghcr.io/cyber-dojo-languages/fsharp_nunit:61b90f3",
   "visible_filenames": [
     "HikerTest.fs",
     "Hiker.fs",
     "cyber-dojo.sh"
   ],
+  "rag_lambda": "red_amber_green.rb",
   "filename_extension": [
     ".fs"
   ],
