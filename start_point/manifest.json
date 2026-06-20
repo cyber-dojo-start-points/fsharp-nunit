@@ -8,7 +8,7 @@
     "NUnit",
     ""
   ],
-  "image_name": "ghcr.io/cyber-dojo-languages/fsharp_nunit:61b90f3",
+  "image_name": "cyberdojofoundation/fsharp_nunit:97dbdd7",
   "visible_filenames": [
     "HikerTest.fs",
     "Hiker.fs",
