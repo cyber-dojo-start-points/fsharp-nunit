@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/cyber-dojo-start-points/fsharp-nunit.svg?style=svg)](https://circleci.com/gh/cyber-dojo-start-points/fsharp-nunit)
+[![GitHub CI](../../actions/workflows/main.yml/badge.svg)](../../actions/workflows/main.yml)
 
 ### display_name="F# 15.2.0, NUnit"
 ### image_name="[cyberdojofoundation/fsharp_nunit](https://hub.docker.com/repository/docker/cyberdojofoundation/fsharp_nunit)"
