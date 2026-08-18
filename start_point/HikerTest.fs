@@ -4,5 +4,5 @@ open NUnit.Framework
 
 [<Test>]
 let ``life, the universe, and everything.`` () =
-   Assert.AreEqual(42,Hiker.answer)
+   Assert.That(Hiker.answer, Is.EqualTo(42))
    

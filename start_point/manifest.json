@@ -1,14 +1,14 @@
 {
-  "display_name": "F# 15.2.0, NUnit",
+  "image_name": "ghcr.io/cyber-dojo-languages/fsharp_nunit:22c5332",
+  "display_name": "F# 10.0, NUnit",
   "language": [
     "F#",
-    "15.2.0"
+    "10.0"
   ],
   "test_framework": [
     "NUnit",
-    ""
+    "4.3.2"
   ],
-  "image_name": "cyberdojofoundation/fsharp_nunit:97dbdd7",
   "visible_filenames": [
     "HikerTest.fs",
     "Hiker.fs",
