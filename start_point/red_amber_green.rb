@@ -11,6 +11,9 @@ lambda { |stdout,stderr,status|
     return :amber if errors > 0 || invalid > 0
     return :red if failures > 0
   end
+  # A fixture holding no tests proves nothing, and the runner calls that
+  # Passed, so the count is what keeps it out of green.
+  return :amber if /^\s+Test Count: 0,/.match(output)
   # Warning is the result when every test that ran passed and some were
   # ignored, which is still working code.
   return :green if /^\s+Overall result: (Passed|Warning)/.match(output)
