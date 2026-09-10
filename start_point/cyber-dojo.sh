@@ -14,17 +14,20 @@ function cyber_dojo_exit()
 cyber_dojo_enter
 trap cyber_dojo_exit EXIT SIGTERM
 
-readonly SDK=/usr/share/dotnet/sdk/10.0.103
+# One .NET SDK is installed, and its version moves as .NET is updated, so
+# the compiler is found rather than written out.
+readonly FSC=$(echo /usr/share/dotnet/sdk/*/FSharp/fsc.dll)
 
 # The compiler needs to write FSharp.Core.dll into this dir, so it must not be
-# symlinked here the way nunit.framework.dll is.
-ln -s ~/.nuget/packages/nunit/4.3.2/lib/net8.0/nunit.framework.dll nunit.framework.dll
+# symlinked here the way nunit.framework.dll is. NUnit's version moves too,
+# so that half of the path is found as well.
+ln -s $(echo ~/.nuget/packages/nunit/*/lib/net8.0/nunit.framework.dll) nunit.framework.dll
 
 # --targetprofile:netcore is required. Without it fsc assumes the .NET Framework
 # profile and fails looking for System.Runtime.Remoting.dll and friends.
 # The .fs files are named rather than globbed because F# compiles in the order
 # given, and a test file has to follow what it tests.
-time (dotnet ${SDK}/FSharp/fsc.dll \
+time (dotnet ${FSC} \
   --nologo \
   --target:library \
   --targetprofile:netcore \
