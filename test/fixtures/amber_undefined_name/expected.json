@@ -1,0 +1,8 @@
+{
+  "matches": [ "^/sandbox/HikerTest\\.fs\\([0-9]+,[0-9]+\\): error FS0039: The value, constructor, namespace or type 'theAnswer' is not defined\\. Maybe you want one of the following:$" ],
+  "match_counts": {
+    "^   answer$": 1,
+    "^  Test Count: ": 0,
+    "^  Overall result: ": 0
+  }
+}

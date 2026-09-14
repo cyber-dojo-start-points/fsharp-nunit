@@ -1,6 +1,6 @@
 {
   "image_name": "ghcr.io/cyber-dojo-languages/fsharp_nunit:8941095",
-  "display_name": "F# 10.0, NUnit",
+  "display_name": "F# 10.0, NUnit 4.3",
   "language": [
     "F#",
     "10.0"

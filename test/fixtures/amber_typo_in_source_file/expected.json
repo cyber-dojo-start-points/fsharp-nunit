@@ -1,0 +1,11 @@
+{
+  "max_output_lines": 20,
+  "matches": [
+    "^/sandbox/Hiker\\.fs\\([0-9]+,[0-9]+\\): error FS0039: The value or constructor 'sevn' is not defined\\. Maybe you want one of the following:$",
+    "^   seven$"
+  ],
+  "match_counts": {
+    "^  Test Count: ": 0,
+    "^  Overall result: ": 0
+  }
+}

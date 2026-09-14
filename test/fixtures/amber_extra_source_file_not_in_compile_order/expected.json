@@ -1,0 +1,7 @@
+{
+  "matches": [ "^/sandbox/HikerTest\\.fs\\([0-9]+,[0-9]+\\): error FS0039: The value, namespace, type or module 'Checksum' is not defined\\. Maybe you want one of the following:$" ],
+  "match_counts": {
+    "^  Test Count: ": 0,
+    "^  Overall result: ": 0
+  }
+}

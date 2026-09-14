@@ -1,0 +1,8 @@
+{
+  "matches": [ "^error FS0225: Source file '/sandbox/Hiker\\.fs' could not be found$" ],
+  "match_counts": {
+    "^  Test Count: ": 0,
+    "^  Overall result: ": 0,
+    "FizzBuzz": 0
+  }
+}

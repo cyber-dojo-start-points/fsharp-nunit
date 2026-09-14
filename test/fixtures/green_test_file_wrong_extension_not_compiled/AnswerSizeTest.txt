@@ -1,0 +1,11 @@
+module AnswerSizeTest.``example``
+
+open NUnit.Framework
+
+// Saved as .txt rather than .fs. Here the extension is not what keeps this
+// file out: cyber-dojo.sh names Hiker.fs and HikerTest.fs on the compiler
+// command line, so renaming this to .fs would leave it just as unread. The
+// test below is one that would fail, so a green says it really did not run.
+[<Test>]
+let ``the answer is three digits long.`` () =
+   Assert.That((string Hiker.answer).Length, Is.EqualTo(3))
